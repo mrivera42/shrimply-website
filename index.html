@@ -11,7 +11,7 @@
     <meta property="og:url" content="https://shrimply.co">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -26,7 +26,7 @@
         html { scroll-behavior: smooth; }
 
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
             background: #ffffff;
             color: var(--text);
             min-height: 100vh;
@@ -49,10 +49,21 @@
         }
 
         .brand {
-            font-family: 'Instrument Serif', serif;
-            font-size: 1.375rem;
-            font-weight: 400;
-            letter-spacing: -0.01em;
+            font-family: 'Geist', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 1.25rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.625rem;
+        }
+
+        .brand-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #ff6b4a;
+            display: inline-block;
         }
 
         /* Hero */
@@ -64,11 +75,11 @@
         .hero h1 {
             max-width: 820px;
             margin: 0 auto;
-            font-family: 'Instrument Serif', serif;
-            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-family: 'Geist', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: clamp(2.25rem, 5.5vw, 4rem);
             line-height: 1.05;
-            letter-spacing: -0.02em;
-            font-weight: 400;
+            letter-spacing: -0.035em;
+            font-weight: 600;
         }
 
         .hero p.lead {
@@ -111,11 +122,11 @@
 
         .features h2 {
             margin-top: 1.75rem;
-            font-family: 'Instrument Serif', serif;
-            font-size: clamp(1.875rem, 4vw, 2.5rem);
+            font-family: 'Geist', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: clamp(1.75rem, 3.5vw, 2.25rem);
             line-height: 1.15;
-            letter-spacing: -0.01em;
-            font-weight: 400;
+            letter-spacing: -0.03em;
+            font-weight: 600;
         }
 
         .features .sub {
@@ -165,18 +176,18 @@
         .quote blockquote { max-width: 720px; margin: 0 auto; }
 
         .quote p.q {
-            font-family: 'Instrument Serif', serif;
-            font-size: clamp(1.75rem, 4vw, 2.5rem);
+            font-family: 'Geist', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: clamp(1.75rem, 3.5vw, 2.25rem);
             line-height: 1.25;
-            letter-spacing: -0.01em;
-            font-weight: 400;
+            letter-spacing: -0.03em;
+            font-weight: 500;
         }
 
         /* Footer */
         footer.site-footer {
             border-top: 1px solid var(--border);
             padding: 5rem 0;
-            font-family: 'Instrument Serif', serif;
+            font-family: 'Geist', -apple-system, BlinkMacSystemFont, sans-serif;
         }
 
         footer.site-footer .cols {
@@ -219,7 +230,7 @@
 <body>
     <header class="site-header">
         <div class="container">
-            <div class="brand">Shrimply</div>
+            <div class="brand"><span class="brand-dot"></span>Shrimply</div>
         </div>
     </header>
 
